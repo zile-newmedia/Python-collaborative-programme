@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Harm Of Smoking</title>
+    <link rel="stylesheet" href="static/style.css"/>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+
+<header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        <div class="mui-input-row mui-search" sstyle="width:500px;">
+            <input type="search" class="mui-input-speech mui-input-clear" placeholder="请输入关键词搜索">
+        </div>
+    </header>
+
+
+<body>
+<div class="nav">
+                    <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/wx">危险因素死亡</a></li>
+                    <li><a href="/yx">因吸烟死亡人数</a></li>
+                     <li><a href="/xy">吸烟导致癌症死亡比例</a></li>
+                     <li><a href="/nl">按年龄划分吸烟死亡人数</a></li>
+                         <li><a href="/result">结论&总结</a></li>
+                    </ul>
+
+
+</div>
+
+    <style type="text/css">
+        /*去掉ul的样式*/
+        ul{
+            list-style:none;
+        }
+        /*去掉a标签的下划线*/
+        a{
+            text-decoration: none;
+        }
+        /*设置.nav的宽高、居中显示、下边框样式*/
+        .nav{
+            width: 970px;
+            height: 25px;
+            margin: 0 auto;
+            border-bottom: 2px solid 		#8B0000;
+        }
+        /*line-height: 25px;与父元素.nav的height一样，使得li居中显示*/
+        .nav li{
+            padding:0 15px 0 15px;
+            line-height: 25px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*a标签不能继承父标签的颜色，所以需要单独设置a标签中的字体颜色*/
+        .nav li a{
+            color: 	#8B0000;
+        }
+        /*当鼠标移动到li标签时，背景颜色变成	#8B0000，出现一个盒阴影*/
+        .nav li:hover{
+            background-color:	#8B0000 ;
+            box-shadow: 5px 5px 5px black;
+        }
+        /*当鼠标移动到li标签时，a标签中的字体颜色变成	#8B0000*/
+        .nav  li:hover  a{
+            color: white;
+        }
+
+        footer {text-align:center;}
+    </style>
+
+<div align="center">
+    <br><h2>图表为2000年到2017年中国按年龄划分的吸烟死亡人数。</h2>
+    <h3>15岁以下人群吸烟死亡数为0，因此不包括15岁以下人群。</h3><br>
+    <div id="186c79f966894c82a152eba4f5190fe5" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_186c79f966894c82a152eba4f5190fe5 = echarts.init(
+            document.getElementById('186c79f966894c82a152eba4f5190fe5'), 'white', {renderer: 'canvas'});
+        var option_186c79f966894c82a152eba4f5190fe5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "70+ years old",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "step": false,
+            "data": [
+                [
+                    "2000",
+                    914405.5911
+                ],
+                [
+                    "2001",
+                    942883.2609
+                ],
+                [
+                    "2002",
+                    976573.4720000001
+                ],
+                [
+                    "2003",
+                    1020254.6429999999
+                ],
+                [
+                    "2004",
+                    1035801.1640000001
+                ],
+                [
+                    "2005",
+                    1021614.05
+                ],
+                [
+                    "2006",
+                    997690.9214
+                ],
+                [
+                    "2007",
+                    999437.1429
+                ],
+                [
+                    "2008",
+                    1019368.3659999999
+                ],
+                [
+                    "2009",
+                    1053593.16
+                ],
+                [
+                    "2010",
+                    1083457.043
+                ],
+                [
+                    "2011",
+                    1093939.426
+                ],
+                [
+                    "2012",
+                    1090970.654
+                ],
+                [
+                    "2013",
+                    1065824.453
+                ],
+                [
+                    "2014",
+                    1088877.488
+                ],
+                [
+                    "2015",
+                    1133099.264
+                ],
+                [
+                    "2016",
+                    1177460.275
+                ],
+                [
+                    "2017",
+                    1223210.94
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0.5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "15-49 years old",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "step": false,
+            "data": [
+                [
+                    "2000",
+                    157494.9722
+                ],
+                [
+                    "2001",
+                    146546.5164
+                ],
+                [
+                    "2002",
+                    136923.0662
+                ],
+                [
+                    "2003",
+                    125383.3681
+                ],
+                [
+                    "2004",
+                    123167.7345
+                ],
+                [
+                    "2005",
+                    120015.5861
+                ],
+                [
+                    "2006",
+                    113968.1883
+                ],
+                [
+                    "2007",
+                    112763.285
+                ],
+                [
+                    "2008",
+                    116591.8811
+                ],
+                [
+                    "2009",
+                    121795.3747
+                ],
+                [
+                    "2010",
+                    126199.9783
+                ],
+                [
+                    "2011",
+                    127970.2739
+                ],
+                [
+                    "2012",
+                    130174.5345
+                ],
+                [
+                    "2013",
+                    129900.6197
+                ],
+                [
+                    "2014",
+                    127759.0934
+                ],
+                [
+                    "2015",
+                    124138.543
+                ],
+                [
+                    "2016",
+                    120188.5147
+                ],
+                [
+                    "2017",
+                    116297.9935
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0.5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "50-69 years old",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "step": false,
+            "data": [
+                [
+                    "2000",
+                    593128.0143
+                ],
+                [
+                    "2001",
+                    604979.0229
+                ],
+                [
+                    "2002",
+                    623250.4438
+                ],
+                [
+                    "2003",
+                    644345.2325
+                ],
+                [
+                    "2004",
+                    649239.4186
+                ],
+                [
+                    "2005",
+                    635073.4537
+                ],
+                [
+                    "2006",
+                    615673.7702
+                ],
+                [
+                    "2007",
+                    610025.5374
+                ],
+                [
+                    "2008",
+                    610725.3383
+                ],
+                [
+                    "2009",
+                    615981.3671
+                ],
+                [
+                    "2010",
+                    632619.0011
+                ],
+                [
+                    "2011",
+                    657727.095
+                ],
+                [
+                    "2012",
+                    689000.1749
+                ],
+                [
+                    "2013",
+                    718543.9511
+                ],
+                [
+                    "2014",
+                    780327.5732
+                ],
+                [
+                    "2015",
+                    846250.1063
+                ],
+                [
+                    "2016",
+                    877261.8507
+                ],
+                [
+                    "2017",
+                    858143.6807
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0.5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "70+ years old",
+                "15-49 years old",
+                "50-69 years old"
+            ],
+            "selected": {
+                "70+ years old": true,
+                "15-49 years old": true,
+                "50-69 years old": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": true,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "boundaryGap": false,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6309\u5e74\u9f84\u5212\u5206\u7684\u5438\u70df\u6b7b\u4ea1\u4eba\u6570"
+        }
+    ]
+};
+        chart_186c79f966894c82a152eba4f5190fe5.setOption(option_186c79f966894c82a152eba4f5190fe5);
+    </script>
+    <h3>从可视化图表可以看出吸烟死亡在老年人口中较为常见，70岁以上占了一半，年轻人和儿童因吸烟死亡人数很低。</h3><br><br>
+    </div>
+</body>
+
+
+<footer>
+
+    <div id="main" style="width:100%;">
+
+        <div id="right" style="width:50%;float:left;" method="GET" action="/xy">
+<p><input value="上一页" type="SUBMIT" ></p>
+</div>
+     <div id="left" style="width:50%;float:left;" method="GET" action="/results">
+<p><input value="下一页" type="SUBMIT" ></p>
+</div>
+
+</footer>
+
+
+</html>

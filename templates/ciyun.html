@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Harm Of Smoking</title>
+
+     <link rel="stylesheet" href="static/style.css"/>
+
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-wordcloud.min.js"></script>
+</head>
+
+<header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        <div class="mui-input-row mui-search" sstyle="width:500px;">
+            <input type="search" class="mui-input-speech mui-input-clear" placeholder="请输入关键词搜索">
+        </div>
+    </header>
+
+    <div class="nav">
+                    <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/wx">危险因素死亡</a></li>
+                    <li><a href="/yx">因吸烟死亡人数</a></li>
+                     <li><a href="/xy">吸烟导致癌症死亡比例</a></li>
+                     <li><a href="/nl">按年龄划分吸烟死亡人数</a></li>
+                         <li><a href="/result">结论&总结</a></li>
+                    </ul>
+
+
+
+</div>
+        <style type="text/css">
+        /*去掉ul的样式*/
+        ul{
+            list-style:none;
+        }
+        /*去掉a标签的下划线*/
+        a{
+            text-decoration: none;
+        }
+        /*设置.nav的宽高、居中显示、下边框样式*/
+        .nav{
+            width: 970px;
+            height: 25px;
+            margin: 0 auto;
+            border-bottom: 2px solid 		#8B0000;
+        }
+        /*line-height: 25px;与父元素.nav的height一样，使得li居中显示*/
+        .nav li{
+            padding:0 15px 0 15px;
+            line-height: 25px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*a标签不能继承父标签的颜色，所以需要单独设置a标签中的字体颜色*/
+        .nav li a{
+            color: 	#8B0000;
+        }
+        /*当鼠标移动到li标签时，背景颜色变成	#8B0000，出现一个盒阴影*/
+        .nav li:hover{
+            background-color:	#8B0000 ;
+            box-shadow: 5px 5px 5px black;
+        }
+        /*当鼠标移动到li标签时，a标签中的字体颜色变成	#8B0000*/
+        .nav  li:hover  a{
+            color: white;
+        }
+
+        footer {text-align:center;}
+
+    </style>
+</head>
+
+<body>
+<div align="center">
+    <h1><i>概述：</i></h1>
+    <h2>下面的词云图展示的是会导致死亡的危险因素，我们可以看到Smoking的出现频率很高;<h2>
+    <h2>现如今，吸烟已成为危害身体健康的一大危险因素;</h2>
+    <h2>世界上每年都有几百万人因为吸烟导致死亡，据不完全统计，20世纪因吸烟导致死亡的人数大约有1亿;</h2>
+
+    <div id="bd6216c31ba34977b313d8cbef803cf3" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_bd6216c31ba34977b313d8cbef803cf3 = echarts.init(
+            document.getElementById('bd6216c31ba34977b313d8cbef803cf3'), 'white', {renderer: 'canvas'});
+        var option_bd6216c31ba34977b313d8cbef803cf3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "wordCloud",
+            "shape": "diamond",
+            "rotationRange": [
+                0,
+                0
+            ],
+            "rotationStep": 45,
+            "girdSize": 20,
+            "sizeRange": [
+                20,
+                100
+            ],
+            "data": [
+                {
+                    "name": "Unsafe water source",
+                    "value": 3886.421,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(73,111,46)"
+                        }
+                    }
+                },
+                {
+                    "name": "Poor sanitation",
+                    "value": 2405.459,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(1,67,55)"
+                        }
+                    }
+                },
+                {
+                    "name": "No access to handwashing facility",
+                    "value": 5348.404,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(146,78,16)"
+                        }
+                    }
+                },
+                {
+                    "name": "Indoor air pollution",
+                    "value": 271089.3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(138,128,60)"
+                        }
+                    }
+                },
+                {
+                    "name": "Charter Communications",
+                    "value": 2467,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(20,107,148)"
+                        }
+                    }
+                },
+                {
+                    "name": "Non-exclusive breastfeeding",
+                    "value": 2674.242,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(63,39,108)"
+                        }
+                    }
+                },
+                {
+                    "name": "Discontinued breastfeeding",
+                    "value": 100.923,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(75,139,41)"
+                        }
+                    }
+                },
+                {
+                    "name": "Child wasting",
+                    "value": 17742.47,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(68,82,86)"
+                        }
+                    }
+                },
+                {
+                    "name": "Child stunting",
+                    "value": 1636.863,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(42,82,70)"
+                        }
+                    }
+                },
+                {
+                    "name": "Low birth weight",
+                    "value": 39334.55,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(55,21,157)"
+                        }
+                    }
+                },
+                {
+                    "name": "Secondhand smoke",
+                    "value": 386641.4,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(111,62,63)"
+                        }
+                    }
+                },
+                {
+                    "name": "Alcohol use",
+                    "value": 670297.3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(72,62,71)"
+                        }
+                    }
+                },
+                {
+                    "name": "Drug use",
+                    "value": 129306.3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(22,48,35)"
+                        }
+                    }
+                },
+                {
+                    "name": "Diet low in fruits",
+                    "value": 718507.1,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(102,127,40)"
+                        }
+                    }
+                },
+                {
+                    "name": "Diet low in vegetables",
+                    "value": 277782.2,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(74,110,18)"
+                        }
+                    }
+                },
+                {
+                    "name": "Unsafe sex",
+                    "value": 73366.9,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(96,10,107)"
+                        }
+                    }
+                },
+                {
+                    "name": "Low physical activity",
+                    "value": 249699.3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(45,5,57)"
+                        }
+                    }
+                },
+                {
+                    "name": "High blood sugar",
+                    "value": 891047.2,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(151,100,51)"
+                        }
+                    }
+                },
+                {
+                    "name": "Obesity",
+                    "value": 823869.3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(128,4,101)"
+                        }
+                    }
+                },
+                {
+                    "name": "High blood pressure",
+                    "value": 2542365,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(93,95,23)"
+                        }
+                    }
+                },
+                {
+                    "name": "Smoking",
+                    "value": 2197653,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(36,66,133)"
+                        }
+                    }
+                },
+                {
+                    "name": "Iron deficiency",
+                    "value": 325.329,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(29,71,55)"
+                        }
+                    }
+                },
+                {
+                    "name": "Zinc deficiency",
+                    "value": 147.4667,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(38,128,37)"
+                        }
+                    }
+                },
+                {
+                    "name": "Vitamin-A deficiency",
+                    "value": 1690.184,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(14,61,39)"
+                        }
+                    }
+                },
+                {
+                    "name": "Low bone mineral density",
+                    "value": 68054.92,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(18,25,136)"
+                        }
+                    }
+                },
+                {
+                    "name": "Air pollution (outdoor & indoor)",
+                    "value": 1242987,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(135,136,115)"
+                        }
+                    }
+                },
+                {
+                    "name": "Outdoor air pollution",
+                    "value": 1029848,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(119,94,129)"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {}
+    ]
+};
+
+        chart_bd6216c31ba34977b313d8cbef803cf3.setOption(option_bd6216c31ba34977b313d8cbef803cf3);
+
+    </script>
+
+    <h2>本项目通过一系列可视化图表，展示吸烟的危害。</h2>
+        <h2>数据来源：</h2>
+        <h3>International Mortality and Smoking Statistics（IMASS）</h3>
+        <h3>Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD)</h3>
+        <h3>World Health Organization (WHO) Global Health Observatory (GHO)</h3><br>
+
+</div>
+
+
+<footer>
+     <form method="GET" action="/wx">
+<p><input value="下一页" type="SUBMIT" ></p>
+</form>
+
+</footer>
+
+
+
+
+</body>
+</html>
