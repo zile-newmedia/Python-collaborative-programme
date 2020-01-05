@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Harm Of Smoking</title>
+    <link rel="stylesheet" href="static/style.css"/>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+
+<header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        <div class="mui-input-row mui-search" sstyle="width:500px;">
+            <input type="search" class="mui-input-speech mui-input-clear" placeholder="请输入关键词搜索">
+        </div>
+    </header>
+
+
+
+<body>
+
+<div class="nav">
+                    <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/wx">危险因素死亡</a></li>
+                    <li><a href="/yx">因吸烟死亡人数</a></li>
+                    <li><a href="/xyzx">中国吸烟致死比例</a></li>
+                     <li><a href="/xy">世界吸烟致死比例</a></li>
+                     <li><a href="/nl">按年龄划分吸烟死亡人数</a></li>
+                         <li><a href="/result">结论&总结</a></li>
+                    </ul>
+
+
+</div>
+
+    <style type="text/css">
+        /*去掉ul的样式*/
+        ul{
+            list-style:none;
+        }
+        /*去掉a标签的下划线*/
+        a{
+            text-decoration: none;
+        }
+        /*设置.nav的宽高、居中显示、下边框样式*/
+        .nav{
+            width: 970px;
+            height: 25px;
+            margin: 0 auto;
+            border-bottom: 2px solid 		#8B0000;
+        }
+        /*line-height: 25px;与父元素.nav的height一样，使得li居中显示*/
+        .nav li{
+            padding:0 15px 0 15px;
+            line-height: 25px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*a标签不能继承父标签的颜色，所以需要单独设置a标签中的字体颜色*/
+        .nav li a{
+            color: 	#8B0000;
+        }
+        /*当鼠标移动到li标签时，背景颜色变成	#8B0000，出现一个盒阴影*/
+        .nav li:hover{
+            background-color:	#8B0000 ;
+            box-shadow: 5px 5px 5px black;
+        }
+        /*当鼠标移动到li标签时，a标签中的字体颜色变成	#8B0000*/
+        .nav  li:hover  a{
+            color: white;
+        }
+
+        footer {text-align:center;}
+    </style>
+
+
+<div align="center">
+
+    <br><h2>我们先来看一下中国按危险因素统计的死亡人数，可以看出很恐怖的一点是，中国每年有超过200万人因为吸烟死亡;</h2><br>
+    <div id="85b8e3d47ccc447280816aa7d8a6d8f5" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_85b8e3d47ccc447280816aa7d8a6d8f5 = echarts.init(
+            document.getElementById('85b8e3d47ccc447280816aa7d8a6d8f5'), 'white', {renderer: 'canvas'});
+        var option_85b8e3d47ccc447280816aa7d8a6d8f5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u6c34\u6c61\u67d3",
+                    "value": 3886.420648
+                },
+                {
+                    "name": "\u5ba4\u5185\u7a7a\u6c14\u6c61\u67d3",
+                    "value": 271089.3473
+                },
+                {
+                    "name": "\u975e\u6392\u4ed6\u6027\u6bcd\u4e73\u5582\u517b",
+                    "value": 2674.2420190000003
+                },
+                {
+                    "name": "\u513f\u7ae5\u53d1\u80b2\u4e0d\u826f",
+                    "value": 1636.863121
+                },
+                {
+                    "name": "\u4f4e\u51fa\u751f\u4f53\u91cd",
+                    "value": 39334.549660000004
+                },
+                {
+                    "name": "\u4e8c\u624b\u70df",
+                    "value": 386641.4086
+                },
+                {
+                    "name": "\u996e\u9152",
+                    "value": 670297.3078
+                },
+                {
+                    "name": "\u836f\u7269\u6b7b\u4ea1",
+                    "value": 129306.3197
+                },
+                {
+                    "name": "\u4e0d\u5b89\u5168\u6027\u884c\u4e3a",
+                    "value": 73366.89942999999
+                },
+                {
+                    "name": "\u9ad8\u8840\u7cd6",
+                    "value": 891047.2355
+                },
+                {
+                    "name": "\u80a5\u80d6",
+                    "value": 823869.2608
+                },
+                {
+                    "name": "\u9ad8\u8840\u538b",
+                    "value": 2542365.122
+                },
+                {
+                    "name": "\u5438\u70df",
+                    "value": 2197652.614
+                },
+                {
+                    "name": "\u7f3a\u94c1",
+                    "value": 325.32903960000004
+                },
+                {
+                    "name": "\u7f3a\u950c",
+                    "value": 147.46665190000002
+                },
+                {
+                    "name": "\u7f3a\u7ef4\u4ed6\u547d",
+                    "value": 1690.1835429999999
+                },
+                {
+                    "name": "\u4f4e\u9aa8\u5bc6\u5ea6",
+                    "value": 68054.92344
+                },
+                {
+                    "name": "\u5ba4\u5185\u5ba4\u5916\u7a7a\u6c14\u6c61\u67d3",
+                    "value": 1242986.55
+                },
+                {
+                    "name": "\u5ba4\u5916\u7a7a\u6c14\u6c61\u67d3",
+                    "value": 1029847.77
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "62%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c34\u6c61\u67d3",
+                "\u5ba4\u5185\u7a7a\u6c14\u6c61\u67d3",
+                "\u975e\u6392\u4ed6\u6027\u6bcd\u4e73\u5582\u517b",
+                "\u513f\u7ae5\u53d1\u80b2\u4e0d\u826f",
+                "\u4f4e\u51fa\u751f\u4f53\u91cd",
+                "\u4e8c\u624b\u70df",
+                "\u996e\u9152",
+                "\u836f\u7269\u6b7b\u4ea1",
+                "\u4e0d\u5b89\u5168\u6027\u884c\u4e3a",
+                "\u9ad8\u8840\u7cd6",
+                "\u80a5\u80d6",
+                "\u9ad8\u8840\u538b",
+                "\u5438\u70df",
+                "\u7f3a\u94c1",
+                "\u7f3a\u950c",
+                "\u7f3a\u7ef4\u4ed6\u547d",
+                "\u4f4e\u9aa8\u5bc6\u5ea6",
+                "\u5ba4\u5185\u5ba4\u5916\u7a7a\u6c14\u6c61\u67d3",
+                "\u5ba4\u5916\u7a7a\u6c14\u6c61\u67d3"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "30%"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6309\u5371\u9669\u56e0\u7d20\u7edf\u8ba1\u7684\u6b7b\u4ea1\u4eba\u6570"
+        }
+    ]
+};
+        chart_85b8e3d47ccc447280816aa7d8a6d8f5.setOption(option_85b8e3d47ccc447280816aa7d8a6d8f5);
+    </script>
+
+    <br><h3>吸烟在世界上是导致死亡的一大危险因素，吸烟会导致肺癌等疾病，严重危害我们的身体健康。
+        在图表中，我们能看到他是中国第二大死亡风险因素。</h3>
+    <h3>从图表中我们还能看到因为吸二手烟死亡的人数竟高达38万，二手烟对身体健康也会产生严重的危害。</h3><br><br>
+
+    <div >
+<table border="1">
+{% for k,v in the_death.items() %}
+  <tr>
+    <th>死亡原因</th>
+    <th>死亡人数</th>
+  </tr>
+  <tr>
+    <td>{{k}}</td>
+    <td>{{v}}</td>
+  </tr>
+    {% endfor %}
+</table>
+    </div>
+
+</div>
+
+</body>
+
+
+<footer>
+
+    <div id="main" style="width:100%;">
+
+            <div id="right" style="width:50%;float:left;" method="GET" action="/ciyun">
+<p><input value="上一页" type="SUBMIT" ></p>
+</div>
+
+     <div id="left" style="width:50%;float:left;" method="GET" action="/yx">
+<p><input value="下一页" type="SUBMIT" ></p>
+</div>
+
+
+</footer>
+
+
+
+
+
+
+</html>
